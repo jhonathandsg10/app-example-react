@@ -1,6 +1,9 @@
 import { Button } from "../../components/Button/Index";
 import { Title } from "../../components/Title/Index";
-import {User} from 'phosphor-react'
+import {AddressBook, ImageSquare, User} from 'phosphor-react'
+import { Menu } from "../../components/Menu";
+import { MenuItem } from "../../components/MenuItem";
+import {Link} from 'react-router-dom'
 
 export function Home(){
     return(
@@ -9,11 +12,14 @@ export function Home(){
             <Title text='Bem Vindoo'/>
         </header>
         <main>
-            <div className="action-buttons">
-                <Button text="Login" type='primary'/>
-                <Button text="Cadastro" type='default'/>
-                <User/>
-            </div>
+            <Menu>
+               
+                
+                <MenuItem icon={<AddressBook size={24}/>} text = "Agenda"/>
+                <Link to='/gallery'>
+                <MenuItem icon={<ImageSquare size={24}/>} text = "Galeria" />
+                </Link>
+            </Menu>
         </main>
         </>
     )

@@ -6,12 +6,24 @@ import { Login } from './pages/Login'
 import { NavBarMenu } from './components/NavBarMenu'
 import { StateExample } from './pages/StateExample'
 import { Gallery } from './components/Gallery'
+import { MenuItem } from './components/MenuItem'
+import { Menu } from './components/Menu'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div id="App">
-       <Gallery/>
-       <NavBarMenu/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+        </Routes>
+        <Routes>
+          <Route path='/gallery' element={<Gallery/>}/>
+        </Routes>
+
+        <NavBarMenu />
+
+      </BrowserRouter>
     </div>
   )
 }
