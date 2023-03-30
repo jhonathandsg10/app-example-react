@@ -1,0 +1,28 @@
+.contactCard {
+
+    width: 500px;
+    height: 148px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 25px;
+    margin: 10px;
+}
+
+.dadosContatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.contactCard img {
+    border-radius: 50%;
+    width: 127px;
+    padding: 10px;
+}
