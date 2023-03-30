@@ -9,7 +9,7 @@ import { Gallery } from './components/Gallery'
 import { MenuItem } from './components/MenuItem'
 import { Menu } from './components/Menu'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Agenda } from './components/Contacs'
+import { Contacs } from './components/Contacs'
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <Route path='/gallery' element={<Gallery/>}/>
         </Routes>
         <Routes>
-          <Route path='/agenda' element={<Agenda/>}/>
+          <Route path='/agenda' element={<Contacs/>}/>
         </Routes>
 
         <NavBarMenu />

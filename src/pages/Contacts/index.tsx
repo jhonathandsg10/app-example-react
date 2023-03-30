@@ -8,10 +8,12 @@ export function Contacs (){
                 <Title text="Agenda de Contatos"/>
             </header>
              <main>
-                <ContacsCard>
-                     <Contacs/>
-                                          
-                </Contacs>
+                <ContacsCard >
+                    
+                    
+             
+                         
+                </ContacsCard>
 
              </main>
 
